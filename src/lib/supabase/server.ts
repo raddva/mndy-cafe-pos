@@ -26,6 +26,7 @@ export async function createClient({
             cookiesToSet.forEach(({ name, value, options }) =>
               cookieStore.set(name, value, options)
             );
+            console.log("Cookies set successfully", cookiesToSet);
           } catch {
             console.error("Error setting cookies", cookiesToSet);
           }

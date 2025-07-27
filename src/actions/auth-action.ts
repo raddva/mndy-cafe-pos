@@ -1,20 +1,19 @@
 "use server";
 
-import { createClient } from "@/lib/supabase/client";
+import { createClient } from "@/lib/supabase/server";
 import { revalidatePath } from "next/cache";
-import { redirect } from "next/navigation";
 import { cookies } from "next/headers";
+import { redirect } from "next/navigation";
 
 export async function signOut() {
   const supabase = await createClient();
-  const cookieStore = await cookies();
-
+  const cookiesStore = await cookies();
   try {
     await supabase.auth.signOut();
-    cookieStore.delete("user_profile");
+    cookiesStore.delete("user_profile");
     revalidatePath("/", "layout");
-  } catch (e) {
-    console.error("Error signing out:  ", e);
+  } catch (error) {
+    console.error("Error signing out:", error);
   }
   redirect("/login");
 }
