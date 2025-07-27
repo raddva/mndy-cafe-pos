@@ -42,10 +42,11 @@ export default function AppSidebar() {
                 <SidebarMenu>
                     <SidebarMenuItem>
                         <SidebarMenuButton size="lg" asChild>
-                            <div className="font-semibold">
-                                <div className="bg-teal-500 flex p-2 items-center justify-center rounded-md">
-                                    <Coffee className="size-4" />
-                                </div>
+                            <div className="font-semibold text-3xl">
+                                <Avatar className="w-8 h-8 rounded-md bg-transparent">
+                                    <AvatarImage src="/logo.png" alt="Mndy Cafe Logo" />
+                                    <AvatarFallback className="text-xs">MC</AvatarFallback>
+                                </Avatar>
                                 Mndy Cafe
                             </div>
                         </SidebarMenuButton>

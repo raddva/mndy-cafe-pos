@@ -1,11 +1,10 @@
+import Dashboard from './_components/dashboard';
+
 export const metadata = {
-    title: 'Mndy Cafe | Admin Dashboard',
+    title: 'Mndy Cafe | Dashboard',
 };
 
-export default function AdminDashboardPage() {
-    return (
-        <div>
-            <button>Dashboard</button>
-        </div>
-    );
+export default function DashboardPage() {
+    return <Dashboard />;
 }
+

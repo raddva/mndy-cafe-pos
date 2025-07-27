@@ -7,7 +7,7 @@ import {
     SidebarTrigger,
 } from '@/components/ui/sidebar';
 import { ReactNode } from 'react';
-import DashboardBreadcrumb from './_components/dashboard-breadcrumb';
+import DashboardBreadcrumb from './admin/_components/dashboard-breadcrumb';
 
 export default function DashboardLayout({ children }: { children: ReactNode }) {
     return (
