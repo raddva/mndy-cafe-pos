@@ -26,6 +26,18 @@ Designed for small to medium businesses to manage products, sales, and inventory
 
 ---
 
+## 🔐 Authentication Setup
+
+This app uses Supabase Auth. Ensure you:
+
+Enable Email/Password auth in Supabase
+
+Optionally set up RLS (Row Level Security) on your tables
+
+You can customize access per role (admin, cashier, kitchen) by setting user metadata or table policies.
+
+---
+
 ## 🧰 Project Structure
 
 ```bash
@@ -52,3 +64,5 @@ This project has been deployed to:
 
 ## 🤝 Contributing
 Feel free to fork this project and submit pull requests. If you find a bug or have feature suggestions, please open an issue.
+
+
