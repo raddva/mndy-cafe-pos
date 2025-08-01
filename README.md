@@ -1,4 +1,4 @@
-# 🧾 POS App — Point of Sales System
+# 🧾 Mndy Cafe — Point of Sales System
 
 A modern, responsive Point of Sales (POS) application built with **Next.js**, **Supabase**, **Tailwind CSS**, and [**Midtrans**](https://midtrans.com) (currently in **sandbox mode**).  
 Designed for small to medium businesses to manage products, sales, and inventory in real-time with a sleek UI, integrated payment processing, and live data updates powered by **Supabase Realtime**.
@@ -29,11 +29,8 @@ Designed for small to medium businesses to manage products, sales, and inventory
 ## 🔐 Authentication Setup
 
 This app uses Supabase Auth. Ensure you:
-
 Enable Email/Password auth in Supabase
-
 Optionally set up RLS (Row Level Security) on your tables
-
 You can customize access per role (admin, cashier, kitchen) by setting user metadata or table policies.
 
 ---
