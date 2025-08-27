@@ -34,7 +34,7 @@ const Receipt = ({
                 className="w-full flex flex-col p-8 absolute -z-10 top-0"
             >
                 <h4 className="text-2xl font-bold text-center pb-4 border-b border-dashed">
-                    WPU Cafe
+                    Mndy Cafe
                 </h4>
                 <div className="py-4 border-b border-dashed text-sm space-y-2">
                     <p>
